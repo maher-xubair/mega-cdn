@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaCDN</title>
+    <meta name="description" content="A lightweight and serverless CDN utilizing MEGA for file storage and delivery.">
+    <meta name="keywords" content="file upload, CDN, MEGA, storage, delivery">
+    <meta name="author" content="maher-xubair">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="hhttps://cdn2.nexoracle.com">
+    <meta property="og:title" content="MegaCDN">
+    <meta property="og:description"
+        content="Upload and manage your files effortlessly with MegaCDN Uploader. Fast, secure, and reliable content delivery for your needs.">
+    <meta property="og:image" content="https://cdn.nexoracle.com/__dirname/images/nexoracle/logo__1200x__white_bg.png">
+
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+    <header>
+        <div class="logo">
+            <i class="fa fa-cloud"></i> Mega<span class="red-dot">CDN</span>
+        </div>
+        <div class="header-buttons">
+            <a href="https://cdn2.nexoracle.com" target="_blank" class="github-btn">
+                <i class="fa fa-globe"></i> Website
+            </a>
+            <a href="https://github.com/maher-xubair/MegaCDN" target="_blank" class="github-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+        </div>
+    </header>
+
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <section class="hero">
+        <h1>The fastest way to transfer <span class="highlight">large files</span></h1>
+
+        <div class="awesome-container">
+            <div class="upload-box">
+                <div class="info-icon" id="uploadInfoIcon">
+                    <i class="fas fa-info-circle"></i>
+                    <div class="info-tooltip" id="infoTooltip">
+                        <div class="tooltip-content">
+                            <p>Loading upload limits...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drag-zone" id="dragZone">
+                    <i class="fa fa-cloud-upload-alt drag-icon"></i>
+                    <div class="drag-text">Drag & drop files here</div>
+                    <div class="drag-subtext">or use the buttons below</div>
+                </div>
+
+                <div class="upload-buttons">
+                    <input type="file" id="fileInput" hidden multiple>
+                    <button class="upload" onclick="document.getElementById('fileInput').click()">
+                        <i class="fa fa-upload"></i> Upload files
+                    </button>
+                    <button class="upload" id="folderUpload">
+                        <i class="fa fa-folder-open"></i> Upload folder
+                    </button>
+                </div>
+
+                <p class="placeholder-text">Secure & Fast File Uploads</p>
+
+                <div class="file-list" id="fileList"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright-box">
+            Copyright &copy; 2025 MegaCDN <br> Designed by <a href="https://maher-xubair.is-a.dev">Maher Zubair</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@nexoracle/utils@1.1.18/dist/browser/index.global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
