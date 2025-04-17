@@ -150,8 +150,8 @@ const response = await axios.post("http://yourdomain.com/upload", form, { header
 
 ## ***To-Do***
 
-- *[ ] Add custom file name*
-- *[ ] Proper logging (error and alerts)*
+- [ ] *Add custom file name*
+- [ ] *Proper logging (error and alerts)*
 
 ## ***Contributing***
 
